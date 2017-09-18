@@ -1,7 +1,7 @@
 server:
   port: 1988
 spring:
-  profiles: host1
+#  profiles: host1
   application:
     name: cloud-service-center
 eureka:
