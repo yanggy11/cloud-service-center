@@ -6,8 +6,8 @@ spring:
     name: cloud-service-center
 eureka:
   instance:
-      hostname: host1
-      prefer-ip-address: true
+    hostname: host1
+    prefer-ip-address: true
   client:
     register-with-eureka: false
     fetch-registry: false
