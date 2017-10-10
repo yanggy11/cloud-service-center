@@ -1,5 +1,5 @@
 server:
-  port: 1988
+  port: 8761
 spring:
 #  profiles: host1
   application:
