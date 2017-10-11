@@ -11,3 +11,14 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
+endpoints:
+  health:
+    sensitive: false
+security:
+  basic:
+    enabled: false
+management:
+#  context-path: /${spring.application.name}
+  security:
+    enabled: false
