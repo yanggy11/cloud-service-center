@@ -1,0 +1,39 @@
+version: '3'
+services:
+#    cloud-service-center:
+#      image: e093344d2e66
+#      ports:
+#        - "1988:1988"
+
+  cloud-service-center:
+    image: yangguiyun/cloud-service-center
+    ports:
+      - "1988:1988"
+  cloud-config-server:
+    image: 78fd630b3c8d
+    ports:
+      - "8887:8887"
+#      cloud-api-gateway:
+#        image: 1ea79cb7b13d
+#        ports:
+#          - "1987:1987"
+#      cloud-service-consumer:
+#        image: 4bf9c5bf42d6
+#        ports:
+#          - "1986:1986"
+#  cloud-config-server:
+#    image: yangguiyun/cloud-config-server
+#    ports:
+#      - "8888:8888"
+#  cloud-service-provider:
+#    image: yangguiyun/cloud-service-provider
+#    ports:
+#      - "1992:1992"
+#  cloud-api-gateway:
+#    image: yangguiyun/cloud-api-gateway
+#    ports:
+#      - "1987:1987"
+#  cloud-service-consumer:
+#    image: yangguiyun/cloud-service-consumer
+#    ports:
+#      - "1986:1986"

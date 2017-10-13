@@ -1,0 +1,6 @@
+version: '3'
+services:
+  cloud-service-provider:
+    image: 010acdda165d
+    ports:
+      - "1994:1992"
