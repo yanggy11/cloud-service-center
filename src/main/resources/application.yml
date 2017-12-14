@@ -1,0 +1,22 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: cloud-service-center
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetchRegistry : false
+    registerWithEureka: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
