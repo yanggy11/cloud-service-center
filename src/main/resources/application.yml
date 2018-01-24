@@ -4,16 +4,18 @@ server:
 spring:
   application:
     name: cloud-service-center
-
 eureka:
   instance:
     hostname: localhost
+    prefer-ip-address: true
   client:
-    fetchRegistry : false
+    fetchRegistry: false
     registerWithEureka: false
   server:
     waitTimeInMsWhenSyncEmpty: 0
-
+    enableSelfPreservation: false
+    evictionIntervalTimerInMs: 4000
+#    enable-self-preservation: false # 自我保护模式 true 打开 默认true,false 关闭
 security:
   basic:
     enabled: false
